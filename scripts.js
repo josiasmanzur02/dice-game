@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("roll-button").addEventListener("click", findWinner);
+});
+
 function findWinner() {
     const player1Die = Math.floor(Math.random() * 6) + 1;
     const player2Die = Math.floor(Math.random() * 6) + 1;
@@ -16,4 +20,4 @@ function findWinner() {
 
     let resultElement = document.getElementById('result');
     resultElement.textContent = resultText;
-} 
+}
