@@ -1,18 +1,26 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Welcome to my dice game!</h1>
+        <div class="content">
+            <h1>Welcome to my dice game!</h1>
 
-        <h1>Player 1 is the winner</h1>
+            <h1 id="result">Roll the dice to find a winner</h1>
 
-        <div class="dice-container">
-            <img src="dice3.png" alt="Player 1's die" class="die">
-            <img src="dice5.png" alt="Player 2's die" class="die">
+            <div class="dice-container">
+                <div class="dice">
+                    <h1>Player 1</h1> 
+                    <img src="img/dice-1.png" alt="Player 1's die" class="die">
+                </div> 
+                <div class="dice">
+                    <h1>Player 2</h1>
+                    <img src="img/dice-1.png" alt="Player 2's die" class="die">
+                </div>
+            </div>
+
+            <button id="roll-button" onclick="findWinner()">Roll Dice</button>
         </div>
-        
-        <button id="roll-button">Roll Dice</button>
     <script src="scripts.js"></script>
     </body>
 </html>
